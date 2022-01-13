@@ -1,3 +1,5 @@
+// ignore_for_file: unused_field
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
@@ -16,7 +18,6 @@ class _DrawerSState extends State<DrawerS> {
   FlutterBluetoothSerial _bluetooth = FlutterBluetoothSerial.instance;
   BluetoothConnection connection;
 
-  // ignore: unused_field
   int _deviceState;
   double rating = 100;
   bool isDisconnecting = false;
@@ -27,10 +28,9 @@ class _DrawerSState extends State<DrawerS> {
 
   bool checkIfPressing = false;
   bool get isConnected => connection != null && connection.isConnected;
-  // ignore: unused_field
+
   List<BluetoothDevice> _devicesList = [];
   bool _connected = false;
-  // ignore: unused_field
   bool _isButtonUnavailable = false;
 
   @override
