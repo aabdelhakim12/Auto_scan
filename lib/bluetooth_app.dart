@@ -692,8 +692,8 @@ class _BluetoothAppState extends State<BluetoothApp> {
 
   Widget radiolist(Widget wi, String val, String tit) {
     return RadioListTile(
-      subtitle: Text(tit), //String title like mode abdomin
-      value: val, //String value ex: 'a'
+      subtitle: Text(tit),
+      value: val,
       groupValue: mode,
       onChanged: (val) {
         setState(() {
