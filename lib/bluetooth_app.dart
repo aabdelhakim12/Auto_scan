@@ -87,6 +87,7 @@ class _BluetoothAppState extends State<BluetoothApp> {
 
   int sec = 3;
   int msec = 50;
+  // ignore: unused_field
   Timer _timer;
 
   void startTimer() {
@@ -170,7 +171,6 @@ class _BluetoothAppState extends State<BluetoothApp> {
         ),
       ),
       body: SingleChildScrollView(
-        // physics: NeverScrollableScrollPhysics(),
         child: Container(
           padding: EdgeInsets.all(8),
           child: Column(
@@ -621,14 +621,6 @@ class _BluetoothAppState extends State<BluetoothApp> {
               ),
 
               SizedBox(height: 20),
-              // JoyStickSection.joyStick(
-              //     context,
-              //     upFieldController,
-              //     rightFieldController,
-              //     leftFieldController,
-              //     downFieldController,
-              //     _sendTextMessageToBluetooth,
-              //     _connected),
             ],
           ),
         ),
